@@ -1,0 +1,82 @@
+/* Navigation styling */
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center the items vertically */
+    padding: 20px 60px;
+    font-size: 20px; /* Adjust the font size */
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Form styling */
+.container {
+    text-align: left;
+}
+
+.card {
+    width: 18rem;
+    margin: 2rem auto 0;
+}
+
+.card-header {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-label {
+    font-weight: bold;
+    color: black; /* Change the label color to black */
+}
+
+.form-control {
+    border: 2px solid black; /* Add a black border to form controls */
+    border-radius: 0; /* Remove border-radius */
+    padding: 8px; /* Adjust padding */
+    margin-top: 0.5rem;
+}
+
+/* Add custom CSS styles for the button */
+.btn-primary {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Add a transition for smooth hover effect */
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: yellow !important; /* Override Bootstrap styles with !important */
+    border-color: yellow !important;
+    color: black !important;
+}
+
+.btn-primary a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn-primary a:hover{
+    color: black;
+}
+
+.Welcome-box {
+    background-color: yellow; /* Use the yellow color from the button hover */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 2rem;
+}

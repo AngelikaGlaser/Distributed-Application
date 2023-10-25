@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hajusrakendus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+</head>
+<body>
+
+    <nav>
+        <h4><a href="/">My Distributed Application</a></h4>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">Register</div>
+            <div class="card-body">
+                <form action="/auth/register" method="POST">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name-reg" name="username" placeholder="Username" required onblur="checkUsernameAvailability">
+                        <div id="username-error" class="alert alert-danger d-none">Username already in use</div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="email-reg" name="email" placeholder="Email" required>
+                        <div id="email-error" class="alert alert-danger d-none">Email already in use</div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="password-reg" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="password-conf-reg" name="password_confirm" placeholder="Confirm Password" required>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    <div>
+                        <p> Already have an account? <a href="/login">Sign in</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
