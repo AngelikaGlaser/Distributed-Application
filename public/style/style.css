@@ -1,82 +1,118 @@
-/* Navigation styling */
-nav {
-    background-color: black;
-    color: white;
+body {
+    margin: 0;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center; /* Center the items vertically */
-    padding: 20px 60px;
-    font-size: 20px; /* Adjust the font size */
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background: url(./background.jpg);
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
 }
 
-nav a:hover {
-    color: yellow;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Form styling */
-.container {
-    text-align: left;
-}
-
-.card {
-    width: 18rem;
-    margin: 2rem auto 0;
-}
-
-.card-header {
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-}
-
-.form-label {
-    font-weight: bold;
-    color: black; /* Change the label color to black */
-}
-
-.form-control {
-    border: 2px solid black; /* Add a black border to form controls */
-    border-radius: 0; /* Remove border-radius */
-    padding: 8px; /* Adjust padding */
-    margin-top: 0.5rem;
-}
-
-/* Add custom CSS styles for the button */
-.btn-primary {
-    background-color: black;
-    border: 2px solid black;
-    color: white;
-    font-weight: bold;
-    margin-top: 5px;
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Add a transition for smooth hover effect */
-    text-align: center;
-}
-
-.btn-primary:hover {
-    background-color: yellow !important; /* Override Bootstrap styles with !important */
-    border-color: yellow !important;
-    color: black !important;
-}
-
-.btn-primary a{
-    color: white;
-    text-decoration: none;
-}
-
-.btn-primary a:hover{
-    color: black;
-}
-
-.Welcome-box {
-    background-color: yellow; /* Use the yellow color from the button hover */
-    padding: 20px;
+.content-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    margin-top: 2rem;
+}
+
+.center-screen {
+    position: relative;
+}
+
+/* Style the container and form */
+.container {
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    background: #ffffff;
+}
+
+.container,
+.form__input,
+.form__button {
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+
+.form > *:first-child {
+    margin-top: 0;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.form__title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Style the error messages */
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #cc3333;
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 1px solid #78909c;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+    border-color: #009579;
+    background: #ffffff;
+}
+
+/* Style the form-submit button */
+.form__button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    background: #009579;
+}
+
+.form__button:hover {
+    background: #007f67;
+}
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+/* Style the form links */
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    color: #252c6a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
 }

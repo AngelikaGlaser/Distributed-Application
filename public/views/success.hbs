@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <title>Successful login - welcome</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
 </head>
 <body>
-<h1>Welcome, {{username}}!</h1>
-<p>You successfully logged in.</p>
-<a href="/logout">Logout</a>
+<div class="center-screen">
+    <div class="content-container">
+        <h1>Welcome, {{username}}!</h1>
+        <p>You successfully logged in.</p>
+        <p>Do you wish to log out?</p>
+        <a href="/logout">Logout</a>
+    </div>
+</div>
 </body>
 </html>
